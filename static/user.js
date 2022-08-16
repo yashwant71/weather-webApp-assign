@@ -6,6 +6,7 @@ var txtInp =document.getElementById('inputBox');
 var formContainer =document.getElementById('formContainer');
 var output =document.getElementById('output')
 var button =document.getElementById('submit')
+
 socket.on('append-text',str=>{ 
     // console.log('append working')
     console.log(str);
@@ -15,6 +16,7 @@ socket.on('append-text',str=>{
     // output.innerText=str;
 })
 button.addEventListener('click' ,(e)=>{
+    e.preventDefault
     var str=txtInp.value;
     console.log(str);
     socket.emit("postCities",str)

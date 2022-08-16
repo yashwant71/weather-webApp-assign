@@ -24,6 +24,7 @@ io.on('connection',socket=>{
         var obj = {
             "cities": arr
         }
+        res.render(__dirname + '/index.html', params)
         console.log(obj)
         axios.post('https://weather-temp-api.herokuapp.com/getWeather', obj)
             .then((res) => {
