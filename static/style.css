@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+#submit{
+    padding: 1vw;
+    margin: 1vh;
+
+}
+#inputBox{
+    padding: 1vw;
+    width: 70vw;
+}
+#output{
+    padding: 2vw;
+    margin: 2vw;
+    border: 1px solid black;
+    height: 40vh;
+}
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
