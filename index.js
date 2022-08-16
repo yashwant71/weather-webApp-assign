@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 io.on('connection', socket => {
-    app.post('/tempr', async (req, res) => {
+    app.post('/', async (req, res) => {
         var str = req.body.text;
         var arr = str.split(',')
         var obj = {
