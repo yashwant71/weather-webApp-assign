@@ -33,7 +33,7 @@ io.on('connection',socket=>{
                 // res.send(mainobj);
                 var strmainobj = JSON.stringify(mainobj)
                 console.log(mainobj)
-                io.emit('append-text', strmainobj)
+                socket.emit('append-text', strmainobj)
             }).catch((err) => {
                 console.log("issue with api");
             });
