@@ -15,8 +15,8 @@ socket.on('append-text',str=>{
     output.append(div)
     // output.innerText=str;
 })
-button.addEventListener('submit' ,(e)=>{
+button.addEventListener('click' ,(e)=>{
     var str=txtInp.value;
     console.log(str);
-    socket.emit("postCities",str)
+    // socket.emit("postCities",str)
 })
