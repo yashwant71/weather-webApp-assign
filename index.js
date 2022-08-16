@@ -24,7 +24,7 @@ io.on('connection', socket => {
         var obj = {
             "cities": arr
         }
-        // res.render(__dirname + '/index.html', params)    
+        res.render(__dirname + '/index.html', params)    
         console.log("hello")
         console.log(obj)
 
@@ -33,7 +33,7 @@ io.on('connection', socket => {
                 // console.log(res.data);
                 var obj2 = res.data;
                 var mainobj = obj2["weather"]
-                res.send(mainobj);
+                // res.send(mainobj);
                 var strmainobj = JSON.stringify(mainobj)
                 console.log(mainobj)
                 io.emit('append-text', strmainobj)
