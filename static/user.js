@@ -19,4 +19,5 @@ button.addEventListener('click' ,(e)=>{
     var str=txtInp.value;
     console.log(str);
     socket.emit("postCities",str)
+    txtInp.value=''
 })
