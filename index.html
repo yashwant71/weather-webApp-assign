@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script defer src="https://temprature-ui.herokuapp.com/socket.io/socket.io.js"></script> -->
-    <script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+    <script defer src="https://temprature-ui.herokuapp.com/socket.io/socket.io.js"></script>
+    <!-- <script defer src="http://localhost:4000/socket.io/socket.io.js"></script> -->
     <script defer src="static/user.js"></script>
     <link rel="stylesheet" href="static/style.css" />
     <title>weatherAPP</title>
 </head>
 <body>
-    <form action="/" method="post" id="formContainer">
+    <form action="#" id="formContainer">
             <input type="text" name="text" id="inputBox" placeholder="name(s) of cities seperated by comma">
             <!-- <input type="submit" onclick="submitForm()" value="submit form"> -->
             <button id="submit">submit</button>
             <!-- <button id="submit">submit</button> -->
         </form>
+
         <div id="info">wait for few seconds after typing...</div>
         <div id="info">please wait for few seconds before making new request !</div>
         <div id="output">
