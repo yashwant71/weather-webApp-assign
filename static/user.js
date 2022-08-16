@@ -1,4 +1,4 @@
-const socket = io('https://temprature-ui.herokuapp.com/');
+const socket = io('https://temprature-ui.herokuapp.com/') ;
 console.log("hello running")
 // const socket = io('http://localhost:4000');
 

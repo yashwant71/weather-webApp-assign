@@ -17,14 +17,14 @@ app.get('/', (req, res) => {
     res.render(__dirname + '/index.html', params)
 })
 
-io.on('connection', socket => {
+// io.on('connection', socket => {
     app.post('/', async (req, res) => {
         var str = req.body.text;
         var arr = str.split(',')
         var obj = {
             "cities": arr
         }
-        res.render(__dirname + '/index.html', params)    
+        res.render(__dirname + '/index.html', params)
         console.log("hello")
         console.log(obj)
 
@@ -42,7 +42,7 @@ io.on('connection', socket => {
             });
     })
 
-})
+// })
 
 port = process.env.PORT || 4000
 // console.log("hello")
