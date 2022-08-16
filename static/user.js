@@ -18,5 +18,5 @@ socket.on('append-text',str=>{
 button.addEventListener('click' ,(e)=>{
     var str=txtInp.value;
     console.log(str);
-    // socket.emit("postCities",str)
+    socket.emit("postCities",str)
 })
