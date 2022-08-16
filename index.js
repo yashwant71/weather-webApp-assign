@@ -24,7 +24,7 @@ app.get('/rend', (req, res) => {
         var obj = {
             "cities": arr
         }
-        res.render(__dirname + '/index.html', params)
+        res.render(__dirname + '/index.html', obj)
         console.log("hello")
         console.log(obj)
 
