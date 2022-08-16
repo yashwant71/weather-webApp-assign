@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
     res.render(__dirname + '/index.html', params)
 })
 
-
 io.on('connection', socket => {
     app.post('/tempr', async (req, res) => {
         var str = req.body.text;
@@ -25,7 +24,7 @@ io.on('connection', socket => {
         var obj = {
             "cities": arr
         }
-        res.render(__dirname + '/index.html', params)    
+        // res.render(__dirname + '/index.html', params)    
         console.log("hello")
         console.log(obj)
 
