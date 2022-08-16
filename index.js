@@ -34,13 +34,13 @@ io.on('connection', socket => {
                 // console.log(res.data);
                 var obj2 = res.data;
                 var mainobj = obj2["weather"]
+                res.send(mainobj);
                 var strmainobj = JSON.stringify(mainobj)
                 console.log(mainobj)
                 io.emit('append-text', strmainobj)
             }).catch((err) => {
                 console.log("issue with api");
             });
-            res.sendStatus(200);
     })
 
 })
