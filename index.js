@@ -13,7 +13,7 @@ app.use('/static', express.static('static')) // For serving static files
 app.use(express.urlencoded())
 
 //to server html file
-app.get('/', (req, res) => {
+app.get('/rend', (req, res) => {
     res.render(__dirname + '/index.html', params)
 })
 
