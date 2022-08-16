@@ -10,10 +10,10 @@ var button =document.getElementById('submit')
 socket.on('append-text',str=>{ 
     // console.log('append working')
     console.log(str);
-    var div =document.createElement('div');
-    div.innerText=str;
-    output.append(div)
-    // output.innerText=str;
+    // var div =document.createElement('div');
+    // div.innerText=str;
+    // output.append(div)
+    output.innerHTML=str;
 })
 button.addEventListener('click' ,(e)=>{
     var str=txtInp.value;
