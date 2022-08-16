@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 
 io.on('connection', socket => {
-    app.post('/', async (req, res) => {
+    app.post('/tempr', async (req, res) => {
         var str = req.body.text;
         var arr = str.split(',')
         var obj = {
@@ -40,6 +40,7 @@ io.on('connection', socket => {
             }).catch((err) => {
                 console.log("issue with api");
             });
+            res.sendStatus(200);
     })
 
 })
