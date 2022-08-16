@@ -1,6 +1,6 @@
-// const socket = io('https://temprature-ui.herokuapp.com/') ;
+const socket = io('https://temprature-ui.herokuapp.com') ;
 console.log("hello running")
-const socket = io('http://localhost:4000');
+// const socket = io('http://localhost:4000');
 
 var txtInp =document.getElementById('inputBox');
 var formContainer =document.getElementById('formContainer');
